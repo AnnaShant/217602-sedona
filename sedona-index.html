@@ -3,23 +3,24 @@
     <head>
         <meta charset="utf-8">
         <title>Sedona</title>
+        <link href="css/style_sedona.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <header>
             <div class="container">
-                <img class="logo" src="http://placehold.it/150x100" alt="150x100">
+                <img src="img/Layer8.png" width="100" height="50" alt="Layer8">
                 <nav class="main_navigation">
                     <ul>
-                        <li>
+                        <li class="main_1">
                             <a href="#">Информация</a>
                         </li>
-                        <li>
+                        <li class="main_2">
                             <a href="#">Фото и Видео</a>
                         </li>
-                        <li>
+                        <li class="main_3">
                             <a href="#">Карта штата</a>
                         </li>
-                        <li>
+                        <li class="main_4">
                             <a href="#">Гостиницы</a>
                         </li>
                     </ul>
@@ -27,31 +28,34 @@
             </div>
         </header>
         <main class="container">
-            <img class="welcome" src="http://placehold.it/150x100" alt="150x100">
-            <img class="to_the_gorgeus" src="http://placehold.it/150x100" alt="150x100">
-            <img class="sedona" src="http://placehold.it/150x100" alt="150x100">
-            <img class="grand_canyon" src="http://placehold.it/150x100" alt="150x100">
-            <img class="sedona_img" src="http://placehold.it/150x100" alt="150x100">
-            <h1 class="text_1">Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
-            <p class="text_2">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+            <div class="sedona_welcome">
+                <img class="welcome" src="img/Welcome.png" width="100" height="50" alt="Welcome">
+                <img class="to_the_gorgeus" src="img/Layer9.png" width="100" height="50" alt="Layer9">
+                <img class="sedona" src="img/Sedona.png" width="100" height="50" alt="Sedona">
+                <img class="grand_canyon" src="img/BecausetheGrandCanyonsucks.png" width="100" height="50" alt="BecausetheGrandCanyonsucks">
+                <img class="sedona_img" src="img/backgroundphoto.jpg" width="100" height="50" alt="backgroundphoto">
+                <img class="additional_img" src="img/Shape1copy3.png" width="100" height="50" alt="Shape1copy3">
+                <h3 class="text_1">Седона - небольшой городок в Аризоне, заслуживающий большего!</h3>
+                <p class="text_2">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p>
+            </div>
             <div class="blue">
                 <b class="text_3">Настоящий городок</b>
                 <div class="namber_1">№1</div>
                 <p class="text_4">Седона - не атракцион для туристов, там течет своя жизнь</p>
-                <img class="img" src="http://placehold.it/150x100" alt="150x100">
+                <img class="img" src="img/Layer10.jpg" width="100" height="50" alt="Layer10">
             </div>
             <div class="white">
-                <img class="img_1" src="http://placehold.it/150x100" alt="150x100">
+                <img class="img_1" src="img/Layer12.png" width="100" height="50" alt="Layer12">
                 <b class="text_1">Жилье</b>
                 <p class="text_2">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
             </div>
             <div class="white">
-                <img class="img_1" src="http://placehold.it/150x100" alt="150x100">
+                <img class="img_1" src="img/Layer13.png" width="100" height="50" alt="Layer13">
                 <b class="text_1">Еда</b>
                 <p class="text_2">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </div>
             <div class="white">
-                <img class="img_1" src="http://placehold.it/150x100" alt="150x100">
+                <img class="img_1" src="img/Layer11.png" width="100" height="50" alt="Layer11">
                 <b class="text_1">Сувениры</b>
                 <p class="text_2">Не только китайского, но и местного производства!</p>
             </div>
@@ -59,7 +63,7 @@
                 <b class="text_3">Там есть мост дъявола</b>
                 <div class="namber_1">№2</div>
                 <p class="text_4">Да, по нему можно пройти! Если конечно вы осмелитесь.</p>
-                <img class="img" src="http://placehold.it/150x100" alt="150x100">
+                <img class="img" src="img/Layer5.jpg" width="100" height="50" alt="Layer5">
             </div>
             <div class="white">
                 <b class="text_1">Небольшая площадь</b>
@@ -76,45 +80,43 @@
                 <div class="namber">№5</div>
                 <p class="text_2">Большинстов едет в Гранд Каньон и толпится там</p>
             </div>
-            <h3 class="text_5">Заинтересовались?</h3>
+            <h2 class="text_5">Заинтересовались?</h2>
             <p class="text_2">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
             <div class="the_form">
-                <p class="hotels">Поиск гостиницы в Седоне</p>
-                <p class="date">Дата заезда:</p>
+                    <p class="hotel">Поиск гостиницы в Седоне</p>
+                    <span class="date">Дата заезда:</span>
                 <form class="form_date">
-                  <input type="date" max="2020-01-01" min="2016-08-01" value="2016-08-01">
-	            </form>
-                <p class="date">Дата выезда:</p>
-                <form class="form_date">
-                  <input type="date" max="2020-01-01" min="2016-08-01" value="2016-08-01">
-	            </form>
-            <div class="number">
-                <span class="adults">Взрослые:</span>
-                <span class="minus">-</span>
-                <input type="text" max="100" min="0" value="0">
-                <span class="plus">+</span>
-            </div>
-            <div class="number">
-                <span class="children">Дети:</span>
-                <span class="minus">-</span>
-                <input type="text" max="100" min="0" value="0">
-                <span class="plus">+</span>
-            </div>
-                <button class="to_find">Найти</button>
+                    <input type="date" max="2020-01-01" min="2016-08-01" value="2016-08-01">
+                <span class="date">Дата выезда:</span>
+                    <input type="date" max="2020-01-01" min="2016-08-01" value="2016-08-01">
+                <div class="number">
+                    <span class="adults">Взрослые:</span>
+                    <span class="minus">-</span>
+                    <input type="text" value="0">
+                    <span class="plus">+</span>
+                </div>
+                <div class="number">
+                    <span class="children">Дети:</span>
+                    <span class="minus">-</span>
+                    <input type="text" value="0">
+                    <span class="plus">+</span>
+                </div>
+                    <button class="to_find">Найти</button>
+                </form>
             </div>
             <div class="map">
-                <a href="#"><img src="http://placehold.it/150x100" alt="150x100"></a>
+                <a href="#"><img src="img/map.png" alt="map"></a>
             </div>
         </main>
         <footer class="main_footer">
             <div class="container">
-                <p class="footer_text"><a href="#">#VISITSEDONA</a></p>
+                <span class="footer_text"><a href="#">#visitsedona</a></span>
             <div class="footer_social">
                 <a class="social-btn social-btn-tw" href="#">Twitter</a>
                 <a class="social-btn social-btn-fb" href="#">Facebook</a>
                 <a class="social-btn social-btn-yt" href="#">Youtube</a>
             </div>
-            <p class="footer_text_1">WEBSITE BY</p>
-            <a href="#"><img src="http://placehold.it/150x100" alt="150x100"></a>
+            <p class="footer_text_1">Website by</p>
+            <a href="#"><img src="img/html.png" width="100" height="50" alt="html"></a>
             </div>
         </footer>
