@@ -1,0 +1,77 @@
+html,
+body {
+    background: white;
+    font-family: PT Sans;
+    font-size: 16px;
+    line-height: 32px;
+    color: black;
+    font-weight: normal;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main_navigation {
+    width: 1200px;
+    height: 55px;
+}
+
+.logo {
+    float: left;
+    position: relative;
+}
+
+.main_1 {
+    float: left;
+    width: 240px;
+}
+
+.main_2 {
+    float: right;
+    width: 240px;
+}
+
+.main_footer {
+    background: #ffffff;
+    height: 120px;
+}
+
+body {
+    background: url(../img/background_hotels.jpg) no-repeat 50% 55px;
+    background-size: 1200px 220px;
+}
+
+.footer_text {
+    float: left;
+    width: 240px;
+    margin-left: 70px;
+}
+
+.footer_social {
+    float: left;
+    width: 400px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.footer_copyright {
+    float: right;
+    width: 240px;
+    margin-right: 70px;
+}
+
+.footer_img {
+    
+}
+
+
+
