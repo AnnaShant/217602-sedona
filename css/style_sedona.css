@@ -7,7 +7,7 @@ body {
     text-transform: uppercase;
     background: #f2f2f2;
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     box-shadow: 
         1px 0 10px 0 rgba(0, 0, 0, 0.1),
         -1px 0 10px 0 rgba(0, 0, 0, 0.1);
@@ -27,8 +27,7 @@ body {
 /*Меню*/
 
 .main_header {
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto;
 }
 
 .logo {
@@ -38,8 +37,7 @@ body {
 }
 
 .main_navigation {
-    margin-left: 70px;
-    margin-right: 70px;
+    margin: 0 70px;
     min-height: 56px;
     font-weight: bold;
 }
@@ -70,8 +68,7 @@ body {
 
 .main_navigation a {
     display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 0;
     color: #000000;
     text-decoration: none;
 }
@@ -86,8 +83,7 @@ body {
 
 .activ_menu a {
     display: block;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding: 15px 0;
     color: #766357;
     text-decoration: none;
     cursor: pointer;
@@ -147,13 +143,11 @@ body {
 }
 
 .blue .text_3 {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding: 0 120px;
 }
 
 .blue .text_4 {
-    padding-left: 55px;
-    padding-right: 55px;
+    padding: 0 55px;
 }
 
 .blue_img {
@@ -172,13 +166,11 @@ body {
 }
 
 .blue_1 .text_3 {
-    padding-left: 120px;
-    padding-right: 120px;
+    padding: 0 120px;
 }
 
 .blue_1 .text_4 {
-    padding-left: 45px;
-    padding-right: 45px;
+    padding: 0 45px;
 }
 
 .blue_img_1 {
@@ -216,18 +208,15 @@ body {
 }
 
 .white_1 .text_2 {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 0 70px;
 }
 
 .white_2 .text_2 {
-    padding-left: 55px;
-    padding-right: 55px;
+    padding: 0 55px;
 }
 
 .white_3 .text_2 {
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 0 60px;
 }
 
 /*Блоки без картинки*/
@@ -263,8 +252,7 @@ body {
 }
 
 .no_img .text_2 {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 0 70px;
 }
 
 /*Текст*/
@@ -294,11 +282,8 @@ body {
     width: 580px;
     background: #766357;
     color: #ffffff;
-    margin-left: 310px;
-    margin-right: 310px;
-    margin-bottom: 0px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    margin: 0 310px;
+    padding: 30px 0;
     font-size: 21px;
     font-weight: bold;
     text-align: center;
@@ -313,9 +298,7 @@ body {
     position: absolute;
     float: left;
     width: 580px;
-    margin-left: 310px;
-    margin-right: 310px;
-    margin-top: 80px;
+    margin: 80px 310px 0;
     padding-top: 55px;
     z-index: 2;
     background: #ffffff;
@@ -337,10 +320,7 @@ body {
     width: 310px;
     margin-right: 55px;
     margin-bottom: 30px;
-    padding-left: 10px;
-    padding-right: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px 30px 10px 10px;
     background: #f2f2f2;
     border: none;
     outline: none;
@@ -431,8 +411,7 @@ body {
 
 .field_mail {
     width: 40px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0;
     border: none;
     outline: none;
     background: #f2f2f2;
@@ -444,8 +423,7 @@ body {
 
 .minus {
     width: 40px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0;
     border: none;
     outline: none;
     background: #f2f2f2;
@@ -466,8 +444,7 @@ body {
 
 .plus {
     width: 40px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding: 5px 0;
     border: none;
     outline: none;
     background: #f2f2f2;
@@ -536,9 +513,7 @@ body {
 .choice_form {
     width: 1060px;
     height: 220px;
-    margin-left: 70px;
-    margin-right: 70px;
-    margin-bottom: 30px;
+    margin: 0 70px 30px;
 }
 
 .name_list {
@@ -611,26 +586,21 @@ body {
 
 .main_form_1 {
     float: left;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-left: 10px;
+    margin: 30px 0 30px 10px;
     width: 240px;
 }
 
 .main_form_2 {
     float: left;
     width: 288px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    margin-right: 190px;
+    margin: 30px 190px 30px 0;
 }
 
 /*Сложный фильтр*/
 
 .main_form_3 {
     float: right;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0;
     width: 330px;
     color: #ffffff;
     text-transform: uppercase;
@@ -752,8 +722,7 @@ body {
 .dop_text {
     float: left;
     width: 1200px;
-    padding-bottom: 35px;
-    padding-top: 5px;
+    padding: 5px 0 35px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
@@ -858,15 +827,13 @@ body {
 }
 
 .choice_hotels {
-    padding-left: 70px;
-    padding-right: 70px;
+    padding: 0 70px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .hotels {
     float: left;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 30px 0;
     width: 530px;
     margin-right: 290px;   
 }
@@ -963,8 +930,7 @@ body {
 .text_hotels_3 {
     display: inline-block;
     width: 110px;
-    padding-bottom: 5px;
-    padding-top: 5px;
+    padding: 5px 0;
     margin-top: 40px;
     font-size: 14px;
     list-style: 21px;
@@ -1005,8 +971,7 @@ body {
 /*Футер*/
 
 .main_footer {
-    margin-left: 70px;
-    margin-right: 70px;
+    margin: 0 70px;
     text-align: center;
 }
 
@@ -1017,8 +982,7 @@ body {
 .footer_text {
     float: left;
     width: 240px;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0;
     margin-right: 85px;
     font-size: 21px;
     font-weight: bold;
@@ -1027,8 +991,7 @@ body {
 .footer_social {
     float: left;
     width: 400px;
-    padding-top: 35px;
-    padding-bottom: 35px;
+    padding: 35px 0;
     margin-right: 85px;
 }
 
@@ -1090,8 +1053,7 @@ body {
 .footer_copyright {
     float: left;
     width: 240px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 0;
 }
 
 .footer_text_1 {
