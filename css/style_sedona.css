@@ -6,7 +6,7 @@ body {
     color: #000000;
     text-transform: uppercase;
     background: #f2f2f2;
-    max-width: 1230px;
+    max-width: 1200px;
     margin: auto;
     box-shadow: 
         1px 0 10px 0 rgba(0, 0, 0, 0.1),
@@ -22,7 +22,6 @@ body {
     position: relative;
     width: 1200px;
     margin: 0 auto;
-    padding: 0 10px;
 }
 
 /*Меню*/
@@ -307,10 +306,12 @@ body {
     border: none;
     outline: none;
     z-index: 3;
+    cursor: pointer;
 }
 
 .form_date {
     position: absolute;
+    float: left;
     width: 580px;
     margin-left: 310px;
     margin-right: 310px;
@@ -327,9 +328,13 @@ body {
     margin-left: 55px;
 }
 
+.date_1 {
+    margin-right: 24px;
+}
+
 .field {
     position: relative;
-    width: 305px;
+    width: 310px;
     margin-right: 55px;
     margin-bottom: 30px;
     padding-left: 10px;
@@ -347,7 +352,7 @@ body {
 
 .field:active {
     background: #ffffff;
-    border: 1px solid #ebebeb;
+    outline: 1px solid #ebebeb;
 }
 
 .calendar_1 {
@@ -360,6 +365,7 @@ body {
     left: 485px;
     top: 65px;
     z-index: 3;
+    cursor: pointer;
 }
 
 .calendar_2 {
@@ -372,6 +378,7 @@ body {
     left: 485px;
     top: 135px;
     z-index: 3;
+    cursor: pointer;
 }
 
 .calendar_1:hover {
@@ -422,23 +429,31 @@ body {
     z-index: 3;
 }
 
-.field_1 {
+.field_mail {
     width: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border: none;
     outline: none;
     background: #f2f2f2;
     text-align: center;
+    line-height: 26px;
+    vertical-align: top;
     border: none;
 }
 
 .minus {
     width: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border: none;
     outline: none;
     background: #f2f2f2;
     color: #a9a9a9;
     font-size: 21px;
     line-height: 26px;
+    vertical-align: top;
+    cursor: pointer;
 }
 
 .minus:hover {
@@ -451,12 +466,15 @@ body {
 
 .plus {
     width: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     border: none;
     outline: none;
     background: #f2f2f2;
     color: #a9a9a9;
     font-size: 21px;
     line-height: 26px;
+    cursor: pointer;
 }
 
 .plus:hover {
@@ -490,6 +508,7 @@ body {
     background: #81b3d2;
     padding: 15px 190px;
     margin: 55px 55px;
+    cursor: pointer;
 }
 
 .to_find:hover {
@@ -732,12 +751,14 @@ body {
 
 .dop_text {
     float: left;
-    width: 1060px;
+    width: 1200px;
+    padding-bottom: 35px;
+    padding-top: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.sorting {
     margin-left: 70px;
-    margin-right: 70px;
-    margin-top: -20px;
-    margin-bottom: -10px;
-    padding-top: 20px;
 }
 
 .choice {
@@ -805,6 +826,7 @@ body {
     width: 240px;
     margin-top: -20px;
     margin-bottom: -10px;
+    margin-right: 70px;
     position: relative;
     left: 205px;
 }
@@ -830,27 +852,33 @@ body {
 /*Блоки-гостиницы*/
 
 .hotels_container {
-    width: 1060px;
-    margin-left: 70px;
-    margin-right: 70px;
+    width: 1200px;
     margin-bottom: 35px;
     margin-top: 90px;
 }
 
+.choice_hotels {
+    padding-left: 70px;
+    padding-right: 70px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .hotels {
     float: left;
-    width: 530px;
-    margin-right: 290px;
     padding-top: 30px;
     padding-bottom: 30px;
+    width: 530px;
+    margin-right: 290px;   
 }
 
 .head {
+    display: inline-block;
     text-decoration: none;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     color: #000000;
+    margin-top: -10px;
 }
 
 .head:hover {
@@ -873,22 +901,19 @@ body {
     vertical-align: top;
 }
 
-.hotels h2 {
-    margin: 0;
-    padding-bottom: 10px;
-}
-
 .text_hotels_1 {
     float: left;
     width: 110px;
     margin-right: 3px;
     margin-bottom: 13px;
+    padding-top: 10px;
 }
 
 .text_hotels_2 {
     float: left;
     width: 140px;
     margin-bottom: 13px;
+    padding-top: 10px;
 }
 
 .detailed_button {
@@ -930,18 +955,27 @@ body {
 .star {
     float:right;
     width: 240px;
-    padding-top: 100px;
+    padding-top: 10px;
     padding-bottom: 30px;
     text-align: right;
 }
 
-.text_hotels {
+.text_hotels_3 {
+    display: inline-block;
+    width: 110px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    margin-top: 40px;
+    font-size: 14px;
+    list-style: 21px;
     background: #f2f2f2;
+    text-align: center;
 }
 
 .star_1 {
-    float: right;
-    margin-top: -70px;
+    display: inline-block;
+    margin-left: 90px;
+    margin-top: 15px;
     background: url(../img/spritesheet.png) no-repeat center;
     width: 89px;
     height: 17px;
@@ -949,8 +983,9 @@ body {
 }
 
 .star_2 {
-    float: right;
-    margin-top: -70px;
+    display: inline-block;
+    margin-left: 90px;
+    margin-top: 15px;
     background: url(../img/spritesheet.png) no-repeat center;
     width: 42px;
     height: 17px;
@@ -958,41 +993,13 @@ body {
 }
 
 .star_3 {
-    float: right;
-    margin-top: -70px;
+    display: inline-block;
+    margin-left: 90px;
+    margin-top: 15px;
     background: url(../img/spritesheet.png) no-repeat center;
     width: 65px;
     height: 17px;
     background-position: -5px -96px;
-}
-
-/*Линии (hr)*/
-
-.line {
-    position: absolute;
-    z-index: 2;
-    width: 1200px;
-    border-color: #e5e5e5;
-}
-
-.line_1 {
-    top: 305px;
-    left: 10px;
-}
-
-.line_2 {
-    top: 455px;
-    left: 10px;
-}
-
-.line_3 {
-    top: 605px;
-    left: 10px;
-}
-
-.line_4 {
-    top: 755px;
-    left: 10px;
 }
 
 /*Футер*/
@@ -1001,7 +1008,10 @@ body {
     margin-left: 70px;
     margin-right: 70px;
     text-align: center;
-    margin-top: -10px;
+}
+
+.footer_hotels {
+    margin-top: -30px;
 }
 
 .footer_text {
@@ -1017,8 +1027,8 @@ body {
 .footer_social {
     float: left;
     width: 400px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 35px;
+    padding-bottom: 35px;
     margin-right: 85px;
 }
 
@@ -1027,7 +1037,6 @@ body {
     width: 50px;
     height: 50px;
     margin: 0 2px;
-
     font-size: 0;
     vertical-align: top;
     text-decoration: none;
