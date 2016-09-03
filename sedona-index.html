@@ -167,12 +167,18 @@
                     date_number_1.value=storage;
                     date_number_2.value=storage;
                     date_number_3.value=storage;
-                }
+                } 
             });
             
             popup.addEventListener("submit", function(event) {
                 if (!date_number.value || !date_number_1.value || !date_number_2.value || !date_number_3.value){
                 event.preventDefault();
+                }
+                else {
+                    localStorage.setItem("date_number", date_number.value);
+                    localStorage.setItem("date_number_1", date_number_1.value);
+                    localStorage.setItem("date_number_2", date_number_2.value);
+                    localStorage.setItem("date_number_3", date_number_3.value);
                 }
             });
         </script>
