@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Sedona</title>
+        <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
         <link href="css/style_sedona.css" rel="stylesheet" type="text/css">
-        <link rel="stylesheet" href="css/normalize.css">
     </head>
     <body>
 <!--Меню-хэйдер-->
@@ -33,7 +33,7 @@
 <!--Фильтр-checkbox-->
         <main class="container clearfix">
             <div class="choice">
-                <form class="choice_form">
+                <form class="choice_form" action="location.href='/'" method="get">
                     <div class="main_form_1">
                     <b class="name_list">Инфраструктура:</b>
                     <ul class="list">
@@ -82,7 +82,7 @@
                         <div class="range_toggle range_toggle_min"></div>
                         <div class="range_toggle range_toggle_max"></div>
                         </div>
-                        <button class="btn_transparent" type="submit">Показать</button>
+                        <button class="btn_transparent" type="submit" value="go">Показать</button>
                     </div>
                 </form>
 <!--Фильтр-сортировака-->

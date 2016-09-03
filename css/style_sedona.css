@@ -295,6 +295,7 @@ body {
 }
 
 .form_date {
+    display: none;
     position: absolute;
     float: left;
     width: 580px;
@@ -304,6 +305,10 @@ body {
     background: #ffffff;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
     font-weight: bold;
+}
+
+.animation {
+    display: block;
 }
 
 .date {
@@ -330,9 +335,9 @@ body {
     background: #ebebeb;
 }
 
-.field:active {
+.field:focus {
     background: #ffffff;
-    outline: 1px solid #ebebeb;
+    outline: 2px solid #ebebeb;
 }
 
 .calendar_1 {
@@ -419,6 +424,15 @@ body {
     line-height: 26px;
     vertical-align: top;
     border: none;
+}
+
+.field_mail:hover {
+    background: #ebebeb;
+}
+
+.field_mail:focus {
+    background: #ffffff;
+    outline: 2px solid #ebebeb;
 }
 
 .minus {
@@ -971,8 +985,10 @@ body {
 /*Футер*/
 
 .main_footer {
+    position: relative;
     margin: 0 70px;
     text-align: center;
+    z-index: 2;
 }
 
 .footer_hotels {
