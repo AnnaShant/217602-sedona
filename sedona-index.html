@@ -11,7 +11,7 @@
 <!--Меню-хэйдер-->
         <header class="main_header">
             <div class="container clearfix">
-                <a href="#"><img class="logo" src="img/sedona_logo.png" width="140" height="70" alt="Sedona"></a>
+                <a href="sedona-index.html"><img class="logo" src="img/sedona_logo.png" width="140" height="70" alt="Sedona"></a>
                 <nav class="main_navigation">
                     <ul class="main">
                         <li class="main_1">
@@ -104,19 +104,19 @@
             </div>
 <!--Форма поиска гостиниц-->
             <div class="the_form">
-                    <button type="button" class="hotel">Поиск гостиницы в Седоне</button>
+                    <button type="button" class="hotel" href="form.html">Поиск гостиницы в Седоне</button>
                 <form class="form_date animation" action="location.href='/'" method="get">
                 <span class="date date_1">Дата заезда:</span>
-                    <input class="field field_1" type="text" name="date" value="" placeholder="24 апреля 2016">
+                    <input class="field field_1" type="text" name="date_number" value="" placeholder="24 апреля 2016">
                     <div class="calendar_1"></div>
                     <span class="date date_2">Дата выезда:</span>
-                    <input class="field field_1" type="text" name="date" value="" placeholder="24 апреля 2016">
+                    <input class="field field_1" type="text" name="date_number_1" value="" placeholder="24 апреля 2016">
                     <div class="calendar_2"></div>
                 <div class="number">
                     <span class="adults">Взрослые:</span>
-                    <button class="minus" type="button">&minus;</button><input class="field_mail" type="text" name="quantity" value="" placeholder="0"><button type="button" class="plus">&plus;</button>
+                    <button class="minus" type="button">&minus;</button><input class="field_mail" type="text" name="date_number_2" value="" placeholder="0"><button type="button" class="plus">&plus;</button>
                     <span class="children">Дети:</span>
-                    <button class="minus" type="button">&minus;</button><input class="field_mail" type="text" name="quantity" value="" placeholder="0"><button class="plus" type="button">&plus;</button>
+                    <button class="minus" type="button">&minus;</button><input class="field_mail" type="text" name="date_number_3" value="" placeholder="0"><button class="plus" type="button">&plus;</button>
                 </div>
                     <button type="submit" class="to_find" value="go">Найти</button>
                 </form>
@@ -145,23 +145,33 @@
         </footer>
 <!--Анимация-->
         <script>
-            var button=document.querySelector(".hotel");
-            var form_date=document.querySelector(".form_date");
-            var show=document.querySelector(".animation");
-            var form=document.querySelector("form");
+            var link=document.querySelector(".hotel");
+            var popup=document.querySelector(".form_date");
+            var close=document.querySelector(".animation");
+            var form=popup.querySelector("form");
+            var date_number=popup.querySelector("[name=date_number]");
+            var date_number=popup.querySelector("[name=date_number_1]");
+            var date_number=popup.querySelector("[name=date_number_2]");
+            var date_number=popup.querySelector("[name=date_number_3]");
+            var storage=localStorage.getItem("date_number");
+            var storage=localStorage.getItem("date_number_1");
+            var storage=localStorage.getItem("date_number_2");
+            var storage=localStorage.getItem("date_number_3");
             
-            button.addEventListener("click", function(event) {
+            link.addEventListener("click", function(event) {
                 event.preventDefault();
-                form_date.classList.add("animation");
+                popup.classList.toggle("animation");
+                
+                if (storage){
+                    date_number.value=storage;
+                    date_number_1.value=storage;
+                    date_number_2.value=storage;
+                    date_number_3.value=storage;
+                }
             });
             
-            button.addEventListener("click", function(event) {
-                event.preventDefault();
-                form_date.classList.remove("animation");
-            });
-            
-            form.addEventListener("submit", function(event) {
-                if (!date=value || !quantity=value) {
+            popup.addEventListener("submit", function(event) {
+                if (!date_number.value || !date_number_1.value || !date_number_2.value || !date_number_3.value){
                 event.preventDefault();
                 }
             });

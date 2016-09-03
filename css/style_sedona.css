@@ -295,7 +295,7 @@ body {
 }
 
 .form_date {
-    display: none;
+    display: block;
     position: absolute;
     float: left;
     width: 580px;
@@ -305,15 +305,27 @@ body {
     background: #ffffff;
     box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.1);
     font-weight: bold;
+    animation: bounce 0.3s;
 }
 
 .animation {
-    display: block;
+    display: none;
+}
+
+@keyframes bounce {
+    0%{height: 0;}
+    100%{height: 350px;}
+}
+
+@keyframes to_find {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
 }
 
 .date {
     margin-right: 20px;
     margin-left: 55px;
+    animation: to_find 0.5s;
 }
 
 .date_1 {
@@ -329,6 +341,7 @@ body {
     background: #f2f2f2;
     border: none;
     outline: none;
+    animation: to_find 0.5s;
 }
 
 .field:hover {
@@ -351,6 +364,7 @@ body {
     top: 65px;
     z-index: 3;
     cursor: pointer;
+    animation: to_find 0.5s;
 }
 
 .calendar_2 {
@@ -364,6 +378,7 @@ body {
     top: 135px;
     z-index: 3;
     cursor: pointer;
+    animation: to_find 0.5s;
 }
 
 .calendar_1:hover {
@@ -424,6 +439,7 @@ body {
     line-height: 26px;
     vertical-align: top;
     border: none;
+    animation: to_find 0.5s;
 }
 
 .field_mail:hover {
@@ -446,6 +462,7 @@ body {
     line-height: 26px;
     vertical-align: top;
     cursor: pointer;
+    animation: to_find 0.5s;
 }
 
 .minus:hover {
@@ -466,6 +483,7 @@ body {
     font-size: 21px;
     line-height: 26px;
     cursor: pointer;
+    animation: to_find 0.5s;
 }
 
 .plus:hover {
@@ -479,11 +497,13 @@ body {
 .adults {
     margin-left: 55px;
     margin-right: 40px;
+    animation: to_find 0.5s;
 }
 
 .children {
     margin-left: 40px;
     margin-right: 25px;
+    animation: to_find 0.5s;
 }
 
 .to_find {
@@ -500,6 +520,7 @@ body {
     padding: 15px 190px;
     margin: 55px 55px;
     cursor: pointer;
+    animation: to_find 0.5s;
 }
 
 .to_find:hover {
