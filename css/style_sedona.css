@@ -413,7 +413,7 @@ body {
 
 .date_1 {
     float: left;
-    padding-right: 21px;
+    padding-right: 19px;
     padding-top: 11px;
     -webkit-animation: to_find 0.5s;
             animation: to_find 0.5s;
@@ -422,7 +422,7 @@ body {
 
 .date_2 {
     float: left;
-    padding-right: 18px;
+    padding-right: 17px;
     padding-top: 11px;
     -webkit-animation: to_find 0.5s;
             animation: to_find 0.5s;
@@ -431,7 +431,8 @@ body {
 .field {
     float: right;
     position: relative;
-    width: 340px;
+    width: 335px;
+    padding: 10px 0px 10px 10px;
     background: #f2f2f2;
     border: none;
     outline: none;
@@ -529,7 +530,7 @@ body {
 
 .adult {
     float: left;
-    padding-right: 38px;
+    padding-right: 45px;
     padding-top: 10px;
     -webkit-animation: to_find 0.5s;
             animation: to_find 0.5s;
