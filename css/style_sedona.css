@@ -408,6 +408,7 @@ body {
 
 .date_2 {
     padding-right: 18px;
+    animation: to_find 0.5s;
 }
 
 .field {
@@ -505,6 +506,17 @@ body {
     outline: 2px solid #ebebeb;
 }
 
+.adult {
+    padding-right: 38px;
+    animation: to_find 0.5s;
+}
+
+.children {
+    padding-right: 20px;
+    padding-left: 40px;
+    animation: to_find 0.5s;
+}
+
 .minus {
     width: 40px;
     padding: 5px 0;
@@ -546,17 +558,6 @@ body {
 
 .plus:active {
     color: #81b3d2;
-}
-
-.adult {
-    padding-right: 38px;
-    animation: to_find 0.5s;
-}
-
-.children {
-    padding-right: 22px;
-    padding-left: 45px;
-    animation: to_find 0.5s;
 }
 
 .to_find {
