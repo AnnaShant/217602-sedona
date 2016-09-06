@@ -1,4 +1,4 @@
-var link=document.querySelector(".hotel");
+            var link=document.querySelector(".hotel");
             var popup=document.querySelector(".form_date");
             
             var date_number=popup.querySelector("[name=date_number]");
@@ -27,3 +27,11 @@ var link=document.querySelector(".hotel");
                     localStorage.setItem("date_number_3", date_number_3.value);
                 }
             });
+
+            window.addEventListener('keydown', function(event) {
+            if (event.keyCode === 27) {
+            if (popup.classList.contains("animation")) {
+            popup.classList.remove("animation");
+        }
+    }
+});
