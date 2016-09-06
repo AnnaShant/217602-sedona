@@ -2,16 +2,16 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>Sedona</title>
+        <title>Sedona hotels</title>
         <link rel="stylesheet" href="css/normalize.css">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet">
         <link href="css/style_sedona.css" rel="stylesheet" type="text/css">
     </head>
-    <body>
+    <body class="background_hotels">
 <!--Меню-хэйдер-->
         <header class="main_header">
             <div class="container clearfix">
-                <a href="sedona-index.html"><img class="logo" src="img/sedona_logo.png" width="140" height="70" alt="Sedona"></a>
+                <a href="sedona_index.html"><img class="logo" src="img/sedona_logo.png" width="138" height="70" alt="Sedona"></a>
                 <nav class="main_navigation">
                     <ul class="main">
                         <li class="main_1">
@@ -35,7 +35,7 @@
             <div class="choice">
                 <form class="choice_form" action="location.href='/'" method="get">
                     <div class="main_form_1">
-                    <b class="name_list">Инфраструктура:</b>
+                    <legend class="name_list">Инфраструктура:</legend>
                     <ul class="list">
                         <li>
                             <input id="b" type="checkbox" name="бассейн" hidden>
@@ -52,7 +52,7 @@
                         </ul>
                     </div>
                     <div class="main_form_2">
-                    <b class="name_list">Тип жилья:</b>
+                    <legend class="name_list">Тип жилья:</legend>
                     <ul class="list">
                         <li>
                             <input id="g" type="checkbox" name="гостиница" hidden checked disabled>
@@ -90,7 +90,7 @@
                     <div class="sorting">
                     <span class="dop_text_1">Найдено:3</span>
                     <span class="dop_text_2">Сортировка:</span>
-                        <ul class="choice">
+                        <ul class="choice_list">
                             <li class="active"><a>По цене</a></li>
                             <li><a class="dop_text_3" href="#">По типу</a></li>
                             <li><a class="dop_text_3" href="#">По рейтингу</a></li>
@@ -178,7 +178,7 @@
                 </div>
                 <div class="footer_copyright">
                     <p class="footer_text_1">Website by</p>
-                    <a class="footer_img" href="#"></a>
+                    <a class="footer_img" href="https://htmlacademy.ru"></a>
                 </div>
                 </div>
             </div>
