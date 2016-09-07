@@ -1,6 +1,6 @@
 html,
 body {
-    font-family: PT Sans, Arial;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
     color: #000000;
@@ -160,15 +160,11 @@ body {
 }
 
 .blue .text_3 {
-    padding-bottom: 10px;
-    padding-left: 139px;
-    padding-right: 139px;
+    padding: 0 139px 10px 139px;
 }
 
 .blue .text_4 {
-    padding-top: 10px;
-    padding-left: 56px;
-    padding-right: 56px;
+    padding: 10px 56px 0 56px;
 }
 
 .blue_img {
@@ -188,15 +184,11 @@ body {
 }
 
 .blue_1 .text_3 {
-    padding-bottom: 10px;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding: 0 120px 10px 120px;
 }
 
 .blue_1 .text_4 {
-    padding-top: 10px;
-    padding-left: 49px;
-    padding-right: 49px;
+    padding-top: 10px 49px 49px 0;
 }
 
 .blue_img_1 {
@@ -463,7 +455,7 @@ body {
     position: absolute;
     background-image: url(../img/spritesheet.png);
     background-position: -5px -288px;
-    background-position:  no-repeat;
+    background-repeat: no-repeat;
     width: 30px;
     height: 30px;
     left: 480px;
@@ -478,7 +470,7 @@ body {
     position: absolute;
     background-image: url(../img/spritesheet.png);
     background-position: -5px -288px;
-    background-position:  no-repeat;
+    background-repeat: no-repeat;
     width: 30px;
     height: 30px;
     left: 480px;
@@ -655,27 +647,28 @@ body {
     width: 1200px;
 }
 
-input::-webkit-input-placeholder {
-  font-weight: 700;
-  color: black;
-  text-transform: uppercase;
+.google_map {
+    display: block;
+}
 
+input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
   opacity: 1;
 }
 
 input::-moz-placeholder {
-  font-weight: 700;
-  color: black;
+  font-weight: bold;
+  color: #000000;
   text-transform: uppercase;
-
   opacity: 1;
 }
 
 input:-ms-input-placeholder {
-  font-weight: 700;
-  color: black;
+  font-weight: bold;
+  color: #000000;
   text-transform: uppercase;
-
   opacity: 1;
 }
 
@@ -727,7 +720,7 @@ input:-ms-input-placeholder {
     content: "";
     display: inline-block;
     height: 26px;
-    width: 22x;
+    width: 22px;
     margin: 0 5px 0 0;
     background-image: url(../img/spritesheet.png);
     background-repeat: no-repeat;
@@ -824,7 +817,11 @@ input:-ms-input-placeholder {
     cursor: pointer;
 }
 
-.price_controls .min_price,
+.price_controls .min_price {
+    width: 90px;
+    padding-left: 65px;
+}
+
 .price_controls .max_price {
     width: 90px;
     padding-left: 65px;
@@ -938,7 +935,7 @@ input:-ms-input-placeholder {
 .dop_text_2 {
     float: left;
     width: 120px;
-    font-family: PT Sans, Arial;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 12px;
     line-height: 18px;
     margin-top: 3px;
@@ -946,7 +943,7 @@ input:-ms-input-placeholder {
 
 .dop_text_3 {
     text-decoration: none;
-    font-family: PT Sans, Arial;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 12px;
     line-height: 18px;
     color: #d6d0cc;
@@ -955,7 +952,7 @@ input:-ms-input-placeholder {
 }
 
 .dop_text_3:hover {
-    font-family: PT Sans, Arial;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 12px;
     line-height: 18px;
     color: #81b3d2;
@@ -963,7 +960,7 @@ input:-ms-input-placeholder {
 }
 
 .dop_text_3:active {
-    font-family: PT Sans, Arial;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 12px;
     line-height: 18px;
     color: #000000;
@@ -971,7 +968,7 @@ input:-ms-input-placeholder {
 }
 
 .active {
-    font-family: PT Sans, Arial;
+    font-family: "PT Sans", Arial, sans-serif;
     font-size: 12px;
     line-height: 18px;
     color: #81b3d2;
@@ -1119,7 +1116,7 @@ input:-ms-input-placeholder {
     padding: 5px 0;
     margin-top: 40px;
     font-size: 14px;
-    list-style: 21px;
+    line-height: 21px;
     background: #f2f2f2;
     text-align: center;
 }
@@ -1268,7 +1265,7 @@ input:-ms-input-placeholder {
     vertical-align: middle;
     padding-top: -5px;
     background-image: url(../img/spritesheet.png);
-    background-position: no-repeat;
+    background-repeat: no-repeat;
     width: 113px;
     height: 39px;
     background-position: -5px -639px;
