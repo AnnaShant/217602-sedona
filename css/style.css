@@ -17,6 +17,12 @@ body {
     background-color: #ffffff;
 }
 
+.background_hotels {
+    background: #81b3d2 url(../img/background_hotels.jpg) no-repeat;
+    background-size: 1200px 218px;
+    background-position: center top 55px;
+}
+
 .clearfix::after {
     content: "";
     display: table;
@@ -33,12 +39,15 @@ body {
 
 .main_header {
     margin: 0 auto;
+    background: #ffffff;
 }
 
 .logo {
     position: absolute;
     left: 530px;
     z-index: 1;
+    max-width: 100%; 
+    height: auto;
 }
 
 .main_navigation {
@@ -123,6 +132,11 @@ body {
     height: 724px;
 }
 
+.welcome {
+    max-width: 100%; 
+    height: auto;
+}
+
 .sedona_text {
     width: 576px;
     margin: 0 auto;
@@ -130,7 +144,7 @@ body {
 }
 
 .text_1 {
-    margin-top: 52px;
+    margin-top: 55px;
     margin-bottom: 28px;
     font-size: 21px;
     line-height: 26px;
@@ -164,6 +178,8 @@ body {
     float: left;
     line-height: 1px;
     background: #81b3d2;
+    max-width: 100%; 
+    height: auto;
 }
 
 .blue_1 {
@@ -188,6 +204,8 @@ body {
     float: left;
     line-height: 1px;
     background: #81b3d2;
+    max-width: 100%; 
+    height: auto;
 }
 
 /*Блоки с картинкой*/
@@ -195,26 +213,31 @@ body {
 .white_class {
     float: left;
     text-align: center;
-    height: 242px;
-    padding-bottom: 88px;
+    padding-bottom: 80px;
 }
 
 .img_1 {
     text-align: center;
     margin-top: 61px;
     background: #ffffff;
+    max-width: 100%; 
+    height: auto;
 }
 
 .img_2 {
     text-align: center;
     margin-top: 63px;
     background: #ffffff;
+    max-width: 100%; 
+    height: auto;
 }
 
 .img_3 {
     text-align: center;
     margin-top: 56px;
     background: #ffffff;
+    max-width: 100%; 
+    height: auto;
 }
 
 .white_1 {
@@ -321,8 +344,7 @@ body {
 .bottom_text {
     clear: both;
     width: 576px;
-    height: 193px;
-    margin: 0 auto;
+    margin: 0 auto 93px;
     padding-top: 57px;
     padding-bottom: 40px;
     text-align: center;
@@ -330,13 +352,14 @@ body {
 
 .text_5 {
     font-size: 30px;
-    line-height: 24px
+    line-height: 24px;
 }
 
 .text_6 {
     padding-top: 25px;
-    margin: 0 75px;
-    line-height: 24px
+    margin: 0 70px;
+    line-height: 24px;
+    text-align: center;
 }
 
 /*Выпадающая форма*/
@@ -400,14 +423,13 @@ body {
 }
 
 .form_container {
-    width: 460px;
     margin: 55px 55px;
 }
 
 .date_1 {
     float: left;
-    padding-right: 19px;
-    padding-top: 11px;
+    width: 115px;
+    padding: 10px 0;
     -webkit-animation: to_find 0.5s;
             animation: to_find 0.5s;
 }
@@ -415,16 +437,16 @@ body {
 
 .date_2 {
     float: left;
-    padding-right: 17px;
-    padding-top: 11px;
+    width: 115px;
+    padding: 10px 0;
     -webkit-animation: to_find 0.5s;
             animation: to_find 0.5s;
 }
 
 .field {
     float: right;
-    position: relative;
     width: 335px;
+    margin-bottom: 27px;
     padding: 10px 0px 10px 10px;
     background: #f2f2f2;
     border: none;
@@ -444,12 +466,8 @@ body {
     border-collapse: collapse;
 }
 
-.field_1 {
-    margin-bottom: 27px;
-}
-
-.field_2 {
-    margin-bottom: 27px;
+.number {
+    position: relative;
 }
 
 .calendar_1 {
@@ -457,10 +475,10 @@ body {
     background-image: url(../img/spritesheet.png);
     background-position: -5px -288px;
     background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    left: 485px;
-    top: 65px;
+    width: 21px;
+    height: 22px;
+    right: 10px;
+    top: 9px;
     z-index: 3;
     cursor: pointer;
     -webkit-animation: to_find 0.5s;
@@ -472,10 +490,10 @@ body {
     background-image: url(../img/spritesheet.png);
     background-position: -5px -288px;
     background-repeat: no-repeat;
-    width: 30px;
-    height: 30px;
-    left: 485px;
-    top: 130px;
+    width: 21px;
+    height: 22px;
+    right: 10px;
+    top: 8px;
     z-index: 3;
     cursor: pointer;
     -webkit-animation: to_find 0.5s;
@@ -499,6 +517,7 @@ body {
 }
 
 .field_mail {
+    float: left;
     width: 38px;
     height: 26px;
     padding: 5px 0;
@@ -523,25 +542,23 @@ body {
 
 .adult {
     float: left;
-    padding-right: 45px;
-    padding-top: 10px;
+    width: 115px;
+    padding: 10px 0;
     -webkit-animation: to_find 0.5s;
             animation: to_find 0.5s;
 }
 
-.mail_1 {
-    float: left;
-}
-
 .children {
-    float: right;
-    padding-top: 7px;
-    margin-right: 140px;
+    float: left;
+    width: 95px;
+    padding: 10px 0 10px 20px;
+    text-align: center;
     -webkit-animation: to_find 0.5s;
             animation: to_find 0.5s;
 }
 
 .minus {
+    float: left;
     width: 38px;
     padding: 5px 0;
     border: none;
@@ -556,22 +573,6 @@ body {
             animation: to_find 0.5s;
 }
 
-.minus_1 {
-    float: left;
-}
-
-.minus_2 {
-    float: left;
-    margin-top: -37px;
-    margin-left: 340px;
-}
-
-.mail_2 {
-    float: left;
-    margin-top: -37px;
-    margin-left: 380px;
-}
-
 .minus:hover {
     color: #000000;
 }
@@ -581,6 +582,7 @@ body {
 }
 
 .plus {
+    float: left;
     width: 38px;
     padding: 5px 0;
     border: none;
@@ -592,15 +594,6 @@ body {
     cursor: pointer;
     -webkit-animation: to_find 0.5s;
             animation: to_find 0.5s;
-}
-
-.plus_1 {
-    float: left;
-}
-
-.plus_2 {
-    float: right;
-    margin-top: -37px;
 }
 
 .plus:hover {
@@ -615,7 +608,7 @@ body {
     display: inline-block;
     vertical-align: top;
     width: 460px;
-    margin-top: 55px;
+    margin-top: 51px;
     border: none;
     outline: none;
     font-size: 21px;
@@ -648,6 +641,8 @@ body {
     height: 593px;
     width: 1200px;
     background: #f2f2f2 url(../img/map.jpg); 
+    max-width: 100%; 
+    height: auto;
 }
 
 .google_map {
@@ -678,12 +673,6 @@ input:-ms-input-placeholder {
 /*hotels, основная часть*/
 
 /*Фильтр-checkbox*/
-
-.background_hotels {
-    background: url(../img/background_hotels.jpg) no-repeat;
-    background-size: 1200px 218px;
-    background-position: center top 55px;
-}
 
 .choice_form {
     width: 1200px;
@@ -916,6 +905,8 @@ input:-ms-input-placeholder {
     width: 1200px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-top: 5px;
+    background: #ffffff;
+
 }
 
 .choice_list {
@@ -1024,6 +1015,8 @@ input:-ms-input-placeholder {
     width: 1200px;
     margin-top: 90px;
     overflow: auto;
+    background: #ffffff;
+
 }
 
 .choice_hotels {
@@ -1064,7 +1057,8 @@ input:-ms-input-placeholder {
     margin-right: 25px;
     vertical-align: top;
     background: #81b3d2;
-    overflow: auto;
+    max-width: 100%; 
+    height: auto;
 }
 
 .block_hotels {
