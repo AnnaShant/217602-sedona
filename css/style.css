@@ -385,7 +385,7 @@ body {
 }
 
 .form_date {
-    display: none;
+    display: block;
     position: absolute;
     float: left;
     width: 570px;
